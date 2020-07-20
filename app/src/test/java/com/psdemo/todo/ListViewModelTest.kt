@@ -1,17 +1,23 @@
 package com.psdemo.todo
 
+import androidx.lifecycle.MutableLiveData
+import com.nhaarman.mockitokotlin2.mock
+import com.nhaarman.mockitokotlin2.whenever
 import com.psdemo.todo.data.Todo
 import com.psdemo.todo.data.TodoRepository
 import com.psdemo.todo.list.ListViewModel
 import com.psdemo.todo.util.TodoTestRepository
 import org.junit.Assert
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.ExpectedException
 
 class ListViewModelTest {
-
-    private lateinit var repository: TodoRepository
     private var todos = mutableListOf<Todo>()
+
+    @get:Rule
+    val expectedException: ExpectedException = ExpectedException.none()
 
     @Before
     fun setup() {
@@ -30,31 +36,44 @@ class ListViewModelTest {
         todo = Todo("Todo Id 5", "Todo 5", now + day, true, now)
         todos.add(todo)
 
-        repository = TodoTestRepository(todos)
-
     }
 
     @Test
-    fun test_allTodos() {
-        val expectedCount = 5
+    fun test_allTodosEmpty() {
+        val expectedCount = 0
+        val repository: TodoRepository = mock()
         val viewModel = ListViewModel(repository)
 
-        val allTodos = viewModel.allTodos.value
+        whenever(repository.getAllTodos())
+            .thenReturn(MutableLiveData(arrayListOf()))
+
+        val allTodos = viewModel.allTodos?.value
 
         Assert.assertNotNull(allTodos)
         Assert.assertEquals(expectedCount, allTodos?.size)
 
     }
 
-    @Test
-    fun test_upcomingTodos() {
-        val expectedCount = 1
-        val viewModel = ListViewModel(repository)
-
-        val upcomingTodos = viewModel.upcomingTodosCount.value
-        Assert.assertNotNull(upcomingTodos)
-        Assert.assertEquals(expectedCount, upcomingTodos)
-
-    }
+//    @Test
+//    fun test_upcomingTodos() {
+//        val expectedCount = 1
+//        val viewModel = ListViewModel(repository)
+//
+//        val upcomingTodos = viewModel.upcomingTodosCount.value
+//        Assert.assertNotNull(upcomingTodos)
+//        Assert.assertEquals(expectedCount, upcomingTodos)
+//
+//    }
+//
+//    @Test
+//    fun test_toggleTodo() {
+//        val id = "fake"
+//        val viewModel = ListViewModel(repository)
+//
+//        expectedException.expect(NotImplementedError::class.java)
+//
+//        viewModel.toggleTodo(id)
+//
+//    }
 
 }
