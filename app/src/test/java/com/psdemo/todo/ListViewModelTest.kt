@@ -1,7 +1,9 @@
 package com.psdemo.todo
 
 import androidx.lifecycle.MutableLiveData
+import com.nhaarman.mockitokotlin2.doThrow
 import com.nhaarman.mockitokotlin2.mock
+import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
 import com.psdemo.todo.data.Todo
 import com.psdemo.todo.data.TodoRepository
@@ -12,6 +14,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.ExpectedException
+import java.lang.IllegalArgumentException
 
 class ListViewModelTest {
     private var todos = mutableListOf<Todo>()
@@ -117,11 +120,27 @@ class ListViewModelTest {
         val repository: TodoRepository = mock()
         val viewModel = ListViewModel(repository)
 
-        expectedException.expect(NotImplementedError::class.java)
+        viewModel.toggleTodo(id)
+
+        verify(repository).toggleTodo(id)
+
+    }
+
+    @Test
+    fun test_toggleTodoNotFound() {
+        val id = "fake"
+        val expectedMessage = "Todo not found"
+        val repository: TodoRepository = mock()
+        whenever(repository.toggleTodo(id))
+            .doThrow(IllegalArgumentException(expectedMessage))
+        val viewModel = ListViewModel(repository)
+
+        expectedException.expect(IllegalArgumentException::class.java)
+        expectedException.expectMessage(expectedMessage)
 
         viewModel.toggleTodo(id)
-        // TODO: work on logic for toggling todos
-        // TODO: work on logic for verifying if todos were added, with title, without, with duedate and without
+
+        verify(repository).toggleTodo(id)
 
     }
 

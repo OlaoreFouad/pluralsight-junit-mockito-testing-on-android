@@ -38,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -69,8 +69,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.ListViewModelTest.test_allTodosEmpty">
-    <configuration name="ListUtilsTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Android JUnit.ListViewModelTest">
+    <configuration name="AddViewModelTest.test_saveNoDueDate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +79,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.psdemo.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListUtilsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.AddViewModelTest" />
+      <option name="METHOD_NAME" value="test_saveNoDueDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddViewModelTest.test_saveNoTitle" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psdemo.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
+      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.AddViewModelTest" />
+      <option name="METHOD_NAME" value="test_saveNoTitle" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -102,40 +120,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListViewModelTest.test_allTodos" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.psdemo.todo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
-      <option name="METHOD_NAME" value="test_allTodos" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListViewModelTest.test_allTodosEmpty" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.psdemo.todo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
-      <option name="METHOD_NAME" value="test_allTodosEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ListViewModelTest.test_toggleTodo" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -147,6 +131,23 @@
       <option name="PACKAGE_NAME" value="com.psdemo.todo" />
       <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
       <option name="METHOD_NAME" value="test_toggleTodo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListViewModelTest.test_toggleTodoNotFound" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psdemo.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
+      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
+      <option name="METHOD_NAME" value="test_toggleTodoNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -213,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.ListViewModelTest.test_allTodosEmpty" />
-        <item itemvalue="Android JUnit.ListViewModelTest.test_toggleTodo" />
         <item itemvalue="Android JUnit.ListViewModelTest" />
-        <item itemvalue="Android JUnit.ListViewModelTest.test_allTodos" />
-        <item itemvalue="Android JUnit.ListUtilsTest" />
+        <item itemvalue="Android JUnit.ListViewModelTest.test_toggleTodoNotFound" />
+        <item itemvalue="Android JUnit.ListViewModelTest.test_toggleTodo" />
+        <item itemvalue="Android JUnit.AddViewModelTest.test_saveNoDueDate" />
+        <item itemvalue="Android JUnit.AddViewModelTest.test_saveNoTitle" />
       </list>
     </recent_temporary>
   </component>
