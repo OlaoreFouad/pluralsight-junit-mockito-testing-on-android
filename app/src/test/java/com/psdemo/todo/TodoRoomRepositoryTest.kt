@@ -66,6 +66,24 @@ class TodoRoomRepositoryTest {
 
     }
 
+    @Test
+    fun test_getAllTodos() {
+
+        val todo = Todo("1", "Todo 1", now + day, false, System.currentTimeMillis())
+        val dao = spy(todoDatabase.todoDao())
+        val expected = 3
+        val repository = TodoRoomRepository(dao)
+
+        repository.insert(todo)
+        repository.insert(Todo("2", "Todo 2", now - day, false, System.currentTimeMillis()))
+        repository.insert(Todo("3", "Todo 3", now + day, true, System.currentTimeMillis()))
+
+        val actual = repository.getAllTodos().test().value()
+        Assert.assertEquals(expected, actual.size)
+        Assert.assertTrue(actual.contains(todo))
+
+    }
+
     @After
     fun teardown() {
         todoDatabase.close()

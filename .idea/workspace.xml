@@ -12,11 +12,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/psdemo/todo/TodoRoomRepositoryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/psdemo/todo/TodoRoomRepositoryTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,24 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.TodoRoomRepositoryTest.test_getUpcomingTodosEmpty">
-    <configuration name="AddViewModelTest.test_saveNoDueDate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.psdemo.todo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.AddViewModelTest" />
-      <option name="METHOD_NAME" value="test_saveNoDueDate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Android JUnit.TodoRoomRepositoryTest.test_getAllTodos">
     <configuration name="ListViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -113,23 +93,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListViewModelTest.test_toggleTodo" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.psdemo.todo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
-      <option name="METHOD_NAME" value="test_toggleTodo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ListViewModelTest.test_toggleTodoNotFound" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -141,6 +104,40 @@
       <option name="PACKAGE_NAME" value="com.psdemo.todo" />
       <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.ListViewModelTest" />
       <option name="METHOD_NAME" value="test_toggleTodoNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoRoomRepositoryTest.test_getAllTodos" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psdemo.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
+      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.TodoRoomRepositoryTest" />
+      <option name="METHOD_NAME" value="test_getAllTodos" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoRoomRepositoryTest.test_getUpcomingTestTodosSingleMatch" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.psdemo.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.psdemo.todo" />
+      <option name="MAIN_CLASS_NAME" value="com.psdemo.todo.TodoRoomRepositoryTest" />
+      <option name="METHOD_NAME" value="test_getUpcomingTestTodosSingleMatch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -224,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.TodoRoomRepositoryTest.test_getAllTodos" />
+        <item itemvalue="Android JUnit.TodoRoomRepositoryTest.test_getUpcomingTestTodosSingleMatch" />
         <item itemvalue="Android JUnit.TodoRoomRepositoryTest.test_getUpcomingTodosEmpty" />
         <item itemvalue="Android JUnit.ListViewModelTest" />
         <item itemvalue="Android JUnit.ListViewModelTest.test_toggleTodoNotFound" />
-        <item itemvalue="Android JUnit.ListViewModelTest.test_toggleTodo" />
-        <item itemvalue="Android JUnit.AddViewModelTest.test_saveNoDueDate" />
       </list>
     </recent_temporary>
   </component>
