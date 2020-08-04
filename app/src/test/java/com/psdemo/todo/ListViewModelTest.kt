@@ -1,10 +1,7 @@
 package com.psdemo.todo
 
 import androidx.lifecycle.MutableLiveData
-import com.nhaarman.mockitokotlin2.doThrow
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.verify
-import com.nhaarman.mockitokotlin2.whenever
+import com.nhaarman.mockitokotlin2.*
 import com.psdemo.todo.data.Todo
 import com.psdemo.todo.data.TodoRepository
 import com.psdemo.todo.list.ListViewModel
